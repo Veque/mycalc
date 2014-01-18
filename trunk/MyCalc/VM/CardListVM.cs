@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Threading;
+using MVVM;
 using MyCalc.Classes;
 
 namespace MyCalc.VM {

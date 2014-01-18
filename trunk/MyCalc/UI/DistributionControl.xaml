@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:ui="clr-namespace:MyCalc.UI"
+             xmlns:mvvm="clr-namespace:MVVM;assembly=MVVM"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
@@ -20,7 +21,7 @@
             <Border BorderBrush="Black" BorderThickness="2,0,0,0" HorizontalAlignment="Left" Margin="{Binding AverageMargin}">
                 <TextBlock Text="{Binding AverageText}" VerticalAlignment="Top" HorizontalAlignment="Left"/>
             </Border>
-            <ui:OverlayControl/>
+            <mvvm:OverlayControl/>
         </Grid>
     </ScrollViewer>
 </UserControl>

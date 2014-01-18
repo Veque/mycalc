@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vm="clr-namespace:MyCalc.VM"
-                    xmlns:ui="clr-namespace:MyCalc.UI">
+                    xmlns:ui="clr-namespace:MyCalc.UI" xmlns:mvvm="clr-namespace:MVVM;assembly=MVVM">
     <DataTemplate DataType="{x:Type vm:TabsVM}">
         <ui:TabControl/>
     </DataTemplate>
@@ -14,7 +14,7 @@
         <ui:VerticalBarControl/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:HeaderOverlayVM}">
-        <ui:OverlayControl/>
+        <mvvm:OverlayControl/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:CardVM}">
         <ui:CardControl/>

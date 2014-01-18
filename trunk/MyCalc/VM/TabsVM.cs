@@ -3,8 +3,10 @@ using System.Collections.ObjectModel;
 using System.Threading;
 using System.Windows;
 using System.Windows.Threading;
+using MVVM;
 using MyCalc.Classes;
 using MyCalc.UI;
+using SplashWindow = MVVM.SplashWindow;
 
 namespace MyCalc.VM {
 	public class TabsVM : ViewModelBase {

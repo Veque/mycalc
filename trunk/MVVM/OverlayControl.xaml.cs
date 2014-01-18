@@ -13,13 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MyCalc.UI {
-	/// <summary>
-	/// Interaction logic for OverlayControl.xaml
-	/// </summary>
-	public partial class OverlayControl : UserControl {
-		public OverlayControl() {
-			InitializeComponent();
-		}
-	}
+namespace MVVM
+{
+    /// <summary>
+    /// Interaction logic for UserControl1.xaml
+    /// </summary>
+    public partial class OverlayControl : UserControl
+    {
+        public OverlayControl()
+        {
+            InitializeComponent();
+        }
+    }
 }

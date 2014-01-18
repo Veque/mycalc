@@ -1,8 +1,9 @@
-п»їusing System;
+using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
-namespace MyCalc.UI {
+
+namespace MVVM {
 	public class Splash<TWindow> : INotifyPropertyChanged, IDisposable where TWindow : Window, new() {
 
 		private string message;
@@ -17,7 +18,7 @@ namespace MyCalc.UI {
 
 		private readonly TWindow window;
 		public Splash(){
-			message = "РџРѕРґРѕР¶РёС‚Рµ...";
+			message = "Подожите...";
 			window = new TWindow { DataContext = this };
 			window.Show();
 		}

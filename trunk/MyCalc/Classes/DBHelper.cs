@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using MVVM;
 
 namespace MyCalc.Classes {
 	public class DBHelper : ADOHelper<string> {

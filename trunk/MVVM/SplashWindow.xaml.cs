@@ -10,15 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MyCalc.UI {
-	/// <summary>
-	/// Interaction logic for Splash.xaml
-	/// </summary>
-	public partial class SplashWindow : Window {
-		public SplashWindow() {
-			InitializeComponent();
-		}
-	}
+namespace MVVM
+{
+    /// <summary>
+    /// Interaction logic for UserControl2.xaml
+    /// </summary>
+    public partial class SplashWindow : Window
+    {
+        public SplashWindow()
+        {
+            InitializeComponent();
+        }
+    }
 }

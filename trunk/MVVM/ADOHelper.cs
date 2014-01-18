@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
 
-namespace MyCalc {
+namespace MVVM {
 	public abstract class ADOHelper<TConnection> {
 
 		public class DBHelperException : Exception {
@@ -46,7 +46,7 @@ namespace MyCalc {
 			else
 				command = createCommand(transaction, procName, isProcedure);
 
-			command.Parameters.AddRange(parameters.Select(p => new SqlParameter(p.ParameterName, p.Value)).ToArray());
+			command.Parameters.AddRange((SqlParameter[]) parameters.Select(p => new SqlParameter(p.ParameterName, p.Value)).ToArray());
 
 			try {
 				return command.ExecuteReader();

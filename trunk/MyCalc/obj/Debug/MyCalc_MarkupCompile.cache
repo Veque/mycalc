@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Валерий\SkyDrive\MyCalc\MyCalc\obj\Debug\
+C:\GIT\mycalc\trunk\MyCalc\obj\Debug\
 MyCalc
 none
 false
 DEBUG;TRACE
-C:\Users\Валерий\SkyDrive\MyCalc\MyCalc\App.xaml
-131222911469
+C:\GIT\mycalc\trunk\MyCalc\App.xaml
+111209324891
 
-46800784977
-12861401308
-Resources\Templates.xaml;UI\CardChooser.xaml;UI\CardControl.xaml;UI\CardListDistributionControl.xaml;UI\CardsListControl.xaml;UI\DistributionControl.xaml;UI\OverlayControl.xaml;UI\TemplateWindow.xaml;UI\TestUserControl.xaml;UI\MainWindow.xaml;UI\SplashWindow.xaml;UI\TabControl.xaml;UI\VerticalBarControl.xaml;
+40-2059479919
+13-632789148
+Resources\Templates.xaml;UI\CardChooser.xaml;UI\CardControl.xaml;UI\CardListDistributionControl.xaml;UI\CardsListControl.xaml;UI\DistributionControl.xaml;UI\TemplateWindow.xaml;UI\TestUserControl.xaml;UI\MainWindow.xaml;UI\TabControl.xaml;UI\VerticalBarControl.xaml;
 
 False
 

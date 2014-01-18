@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:ui="clr-namespace:MyCalc.UI;assembly=MyCalc" xmlns:resources="clr-namespace:Mandelbrot.Resources"
+             xmlns:resources="clr-namespace:Mandelbrot.Resources" xmlns:mvvm="clr-namespace:MVVM;assembly=MVVM"
 
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800">
@@ -96,6 +96,6 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </DockPanel>
-        <ui:OverlayControl Grid.Row="1"/>
+        <mvvm:OverlayControl Grid.Row="1"/>
     </Grid>
 </UserControl>

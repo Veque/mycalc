@@ -1,5 +1,6 @@
 ﻿using System.Windows.Media;
 using System.Windows.Threading;
+using MVVM;
 using MyCalc.Classes;
 
 namespace MyCalc.VM {

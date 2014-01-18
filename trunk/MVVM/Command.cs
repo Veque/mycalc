@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Windows.Input;
-namespace MyCalc.Classes {
+
+namespace MVVM {
 	public class Command : ICommand {
 
 		#region Fields

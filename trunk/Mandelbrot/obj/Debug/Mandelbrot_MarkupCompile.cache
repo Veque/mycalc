@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Валерий\SkyDrive\MyCalc\Mandelbrot\obj\Debug\
+C:\GIT\mycalc\trunk\Mandelbrot\obj\Debug\
 Mandelbrot
 none
 false
 DEBUG;TRACE
-C:\Users\Валерий\SkyDrive\MyCalc\Mandelbrot\App.xaml
+C:\GIT\mycalc\trunk\Mandelbrot\App.xaml
 3950819376
 
 13-437672477
-12-382600322
+121136331314
 Resources\Templates.xaml;UI\MainWindow.xaml;UI\MandelbrotControl.xaml;
 
 False

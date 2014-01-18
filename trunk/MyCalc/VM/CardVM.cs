@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Media;
 using System.Windows.Threading;
+using MVVM;
 using MyCalc.Classes;
 using Brush = System.Windows.Media.Brush;
 

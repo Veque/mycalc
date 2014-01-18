@@ -10,8 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 using Mandelbrot.Classes;
-using MyCalc.Classes;
-using MyCalc.VM;
+using MVVM;
+
 namespace Mandelbrot.VM {
 	public class MandelbrotVM : HeaderOverlayVM {
 

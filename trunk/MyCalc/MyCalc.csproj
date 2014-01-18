@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyCalc</RootNamespace>
     <AssemblyName>MyCalc</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -54,13 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ADOHelper.cs" />
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\ColorRandomizer.cs" />
     <Compile Include="Classes\Combination.cs" />
     <Compile Include="Classes\CombinationRatings.cs" />
     <Compile Include="Classes\Combinatorics.cs" />
-    <Compile Include="Classes\Command.cs" />
     <Compile Include="Classes\Const.cs" />
     <Compile Include="Classes\DBHelper.cs" />
     <Compile Include="Classes\Distribution.cs" />
@@ -82,9 +80,6 @@
     <Compile Include="UI\DistributionControl.xaml.cs">
       <DependentUpon>DistributionControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\OverlayControl.xaml.cs">
-      <DependentUpon>OverlayControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\TemplateWindow.xaml.cs">
       <DependentUpon>TemplateWindow.xaml</DependentUpon>
     </Compile>
@@ -97,10 +92,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="UI\Splash.cs" />
-    <Compile Include="UI\SplashWindow.xaml.cs">
-      <DependentUpon>SplashWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\TabControl.xaml.cs">
       <DependentUpon>TabControl.xaml</DependentUpon>
@@ -123,7 +114,6 @@
     <Compile Include="VM\TabsVM.cs" />
     <Compile Include="VM\TestVM.cs" />
     <Compile Include="VM\Stat.cs" />
-    <Compile Include="VM\ViewModelBase.cs" />
     <Page Include="Resources\Templates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -148,10 +138,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\OverlayControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UI\TemplateWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -163,10 +149,6 @@
     <Page Include="UI\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UI\SplashWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\TabControl.xaml">
       <SubType>Designer</SubType>
@@ -213,6 +195,12 @@
     <Resource Include="Resources\diamonds.png" />
     <Resource Include="Resources\hearts.png" />
     <Resource Include="Resources\spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVVM\MVVM.csproj">
+      <Project>{74E59C67-1104-4817-AE1B-60B52BCB2A97}</Project>
+      <Name>MVVM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

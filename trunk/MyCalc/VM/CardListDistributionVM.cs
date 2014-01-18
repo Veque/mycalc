@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Windows.Threading;
+using MVVM;
 using MyCalc.Classes;
 using System.Linq;
 using MyCalc.UI;

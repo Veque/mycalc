@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Windows.Threading;
 
-namespace MyCalc.VM {
+namespace MVVM {
 	public class ViewModelBase : INotifyPropertyChanged {
 
 		public ViewModelBase(Dispatcher dispatcher){

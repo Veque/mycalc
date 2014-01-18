@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Windows.Threading;
-using MVVM;
-using MyCalc.Classes;
 
-namespace MyCalc.VM {
+namespace MVVM {
 	public class HeaderVM : ViewModelBase {
 
 		public HeaderVM(Dispatcher dispatcher) : base(dispatcher) { }
